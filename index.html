@@ -34,8 +34,8 @@
 <meta property="og:title" content="WireMock">
 
 
-  <link rel="canonical" href="http://tomakehurst.com/wiremock2/">
-  <meta property="og:url" content="http://tomakehurst.com/wiremock2/">
+  <link rel="canonical" href="http://new.wiremock.org//">
+  <meta property="og:url" content="http://new.wiremock.org//">
 
 
 
@@ -62,7 +62,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Tom Akehurst",
-      "url" : "http://tomakehurst.com/wiremock2",
+      "url" : "http://new.wiremock.org/",
       "sameAs" : null
     }
   </script>
@@ -75,7 +75,7 @@
 <!-- end SEO -->
 
 
-<link href="http://tomakehurst.com/wiremock2/feed.xml" type="application/atom+xml" rel="alternate" title="WireMock Feed">
+<link href="http://new.wiremock.org//feed.xml" type="application/atom+xml" rel="alternate" title="WireMock Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -90,9 +90,11 @@
 <link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://tomakehurst.com/wiremock2/assets/css/main.css">
+<link rel="stylesheet" href="http://new.wiremock.org//assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+<link rel="shortcut icon" type="image/x-icon" href="http://new.wiremock.org//images/favicon3.png">
 
     <!-- start custom head snippets -->
 
@@ -114,26 +116,21 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://tomakehurst.com/wiremock2/">WireMock</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="http://new.wiremock.org//"><img src="http://new.wiremock.org//images/wiremock-concept-icon-01.png" style="width: 80px; height: 37px" /></a>
+          </li>
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/docs">Docs</a></li>
-            
-
-          
-            
-
-            
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/blog">Blog</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//docs">Docs</a></li>
             
 
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/about">About</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//about">About</a></li>
             
 
           
@@ -148,6 +145,13 @@
 
             
             <li class="masthead__menu-item"><a href="https://groups.google.com/forum/#!forum/wiremock-user" target="_blank">Mailing List</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//external-resources">External Resources</a></li>
             
 
           
@@ -178,18 +182,19 @@
     
 
     <section class="page__content" itemprop="text">
-      <!-- <div class="code-shots">
-  <img class="code-shots__code-shot" src="images/java-wiremock-sample.jpg"/>
-  <img class="code-shots__code-shot" src="images/json-wiremock-sample.jpg"/>
-</div> -->
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 3em; margin-bottom: -2em;">
+  <section class="homepage-section" style="margin-right: 2em; flex: 1">
 
-<section class="homepage-section">
-  <h1>WireMock - mock your APIs for fast, robust and comprehensive tests</h1>
-  <p>WireMock is a simulator for HTTP-based APIs. Some might call it a service virtualization tool or mock server.<br><br>
-  It enables you keep building when an API you depend on doesn't exist or isn't complete.
-  It supports testing of edge cases and failure modes that the real API won't reliably produce.
-  And because it's fast it can reduce your build time from hours down to minutes.<p>
-</section>
+    <h1 class="page__title homepage__title">WireMock</h1>
+    <h2 class="homepage__subtitle">Mock your APIs for fast, robust and comprehensive testing</h2>
+    <p>WireMock is a simulator for HTTP-based APIs. Some might call it a <strong>service virtualization</strong> tool or a <strong>mock server</strong>.<br><br>
+    It enables you <strong>stay productive</strong> when an API you depend on <strong>doesn't exist</strong> or isn't complete.
+    It supports testing of <strong>edge cases and failure modes</strong> that the real API won't reliably produce.
+    And because it's fast it can <strong>reduce your build time</strong> from hours down to minutes.<p>
+
+  </section>
+  <img class="code-shots__code-shot" src="images/small-json-idea-shot.png" style="position: relative; top: -48px"/>
+</div>
 
 <div class="feature__wrapper">
     <div class="feature__item">
@@ -197,19 +202,19 @@
 
             <div class="archive__item-body"><h2 class="archive__item-title">Flexible Deployment</h2>
                 <div class="archive__item-excerpt">
-                  <p>Start WireMock from within your Java application, or run it as a standalone process.</p>
+                  <p>Run WireMock from within your Java application, JUnit test, Servlet container or as a standalone process.</p>
                 </div>
-                <p><a href="/docs/getting-started" class="btn">Learn More</a></p></div>
+                <p><a href="/docs/getting-started/" class="btn">Learn More</a></p></div>
         </div>
     </div>
     <div class="feature__item">
         <div class="archive__item">
 
-            <div class="archive__item-body"><h2 class="archive__item-title">Powerful Matching</h2>
+            <div class="archive__item-body"><h2 class="archive__item-title">Powerful Request Matching</h2>
                 <div class="archive__item-excerpt">
-                  <p>Match HTTP requests using a wide variety of strategies. First class support for JSON and XML.</p>
+                  <p>Match request URLs, methods, headers cookies and bodies using a wide variety of strategies. First class support for JSON and XML.</p>
                 </div>
-                <p><a href="/docs/getting-started" class="btn ">Learn More</a></p></div>
+                <p><a href="/docs/getting-started/" class="btn ">Learn More</a></p></div>
         </div>
     </div>
     <div class="feature__item">
@@ -217,9 +222,9 @@
 
             <div class="archive__item-body"><h2 class="archive__item-title">Record and Playback</h2>
                 <div class="archive__item-excerpt">
-                  <p>Get started quickly by recording traffic from an existing API.</p>
+                  <p>Get up and running quickly by capturing traffic to and from an existing API.<br><br></p>
                 </div>
-                <p><a href="/docs/record-and-playback" class="btn ">Learn More</a></p></div>
+                <p><a href="/docs/record-playback/" class="btn ">Learn More</a></p></div>
         </div>
     </div>
 </div>
@@ -227,10 +232,13 @@
 <section class="homepage-section">
   <h2 class="homepage-section__heading homepage-section__heading--centred">Who uses WireMock?</h2>
   <div class="users-of">
-    <img src="images/logos/Pivotal_WhiteOnTeal.png" style="width: 182px; height: 74px" alt="Pivotal" class="users-of__logo"/>
-    <img src="images/logos/sky-logo.png" style="width: 118px; height: 74px" alt="Sky" class="users-of__logo"/>
-    <img src="images/logos/CapitalOneLogo.png" style="width: 212px; height: 74px" alt="Capital One" class="users-of__logo"/>
-    <img src="images/logos/intuit_blue.gif" style="width: 151px; height: 74px" alt="Capital One" class="users-of__logo"/>
+    <img src="images/logos/Pivotal_WhiteOnTeal.png" alt="Pivotal" class="users-of__logo"/>
+    <img src="images/logos/softwire-logo.jpg" alt="Softwire" class="users-of__logo"/>
+    <img src="images/logos/Yenlo_logo_trans.png" alt="Yenlo" class="users-of__logo"/>
+    <img src="images/logos/EW-logo.png" alt="Energized Work" class="users-of__logo"/>
+    <img src="images/logos/sky-logo.png" alt="Sky" class="users-of__logo"/>
+    <img src="images/logos/CapitalOneLogo.png" alt="Capital One" class="users-of__logo"/>
+    <img src="images/logos/intuit_blue.gif" alt="Intuit" class="users-of__logo"/>
   </div
 </section>
 
@@ -254,7 +262,7 @@
     
     
     
-    <li><a href="http://tomakehurst.com/wiremock2/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://new.wiremock.org//feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -262,7 +270,7 @@
       </footer>
     </div>
 
-    <script src="http://tomakehurst.com/wiremock2/assets/js/main.min.js"></script>
+    <script src="http://new.wiremock.org//assets/js/main.min.js"></script>
 
 
 

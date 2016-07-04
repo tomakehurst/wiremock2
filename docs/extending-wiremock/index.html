@@ -34,8 +34,8 @@
 <meta property="og:title" content="Extending WireMock">
 
 
-  <link rel="canonical" href="http://tomakehurst.com/wiremock2/docs/extending-wiremock/">
-  <meta property="og:url" content="http://tomakehurst.com/wiremock2/docs/extending-wiremock/">
+  <link rel="canonical" href="http://new.wiremock.org//docs/extending-wiremock/">
+  <meta property="og:url" content="http://new.wiremock.org//docs/extending-wiremock/">
 
 
 
@@ -54,10 +54,12 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2016-06-29T14:31:10+01:00">
+  <meta property="article:published_time" content="2016-07-04T21:56:06+01:00">
   
-    <link rel="next" href="http://tomakehurst.com/wiremock2/docs/getting-started/" title="Getting Started">
+    <link rel="next" href="http://new.wiremock.org//docs/getting-started/" title="Getting Started">
   
+  
+    <link rel="prev" href="http://new.wiremock.org//docs/configuration/" title="Configuration">
   
 
 
@@ -69,7 +71,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Tom Akehurst",
-      "url" : "http://tomakehurst.com/wiremock2",
+      "url" : "http://new.wiremock.org/",
       "sameAs" : null
     }
   </script>
@@ -82,7 +84,7 @@
 <!-- end SEO -->
 
 
-<link href="http://tomakehurst.com/wiremock2/feed.xml" type="application/atom+xml" rel="alternate" title="WireMock Feed">
+<link href="http://new.wiremock.org//feed.xml" type="application/atom+xml" rel="alternate" title="WireMock Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -97,9 +99,11 @@
 <link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://tomakehurst.com/wiremock2/assets/css/main.css">
+<link rel="stylesheet" href="http://new.wiremock.org//assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+<link rel="shortcut icon" type="image/x-icon" href="http://new.wiremock.org//images/favicon3.png">
 
     <!-- start custom head snippets -->
 
@@ -121,26 +125,21 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://tomakehurst.com/wiremock2/">WireMock</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="http://new.wiremock.org//"><img src="http://new.wiremock.org//images/wiremock-concept-icon-01.png" style="width: 80px; height: 37px" /></a>
+          </li>
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/docs">Docs</a></li>
-            
-
-          
-            
-
-            
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/blog">Blog</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//docs">Docs</a></li>
             
 
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://tomakehurst.com/wiremock2/about">About</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//about">About</a></li>
             
 
           
@@ -155,6 +154,13 @@
 
             
             <li class="masthead__menu-item"><a href="https://groups.google.com/forum/#!forum/wiremock-user" target="_blank">Mailing List</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org//external-resources">External Resources</a></li>
             
 
           
@@ -187,67 +193,79 @@
 
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/getting-started/">
+        <a href="http://new.wiremock.org//docs/getting-started/">
 
         Getting Started
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/junit-rule/">
+        <a href="http://new.wiremock.org//docs/junit-rule/">
 
         The JUnit 4.x Rule
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/java-usage/">
+        <a href="http://new.wiremock.org//docs/java-usage/">
 
         Java (Non-JUnit) Usage
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/running-standalone/">
+        <a href="http://new.wiremock.org//docs/configuration/">
+
+        Configuration
+      </a>
+      
+      <li>
+        <a href="http://new.wiremock.org//docs/running-standalone/">
 
         Running as a Standalone Process
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/stubbing/">
+        <a href="http://new.wiremock.org//docs/stubbing/">
 
         Stubbing
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/verifying/">
+        <a href="http://new.wiremock.org//docs/verifying/">
 
         Verifying
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/proxying/">
+        <a href="http://new.wiremock.org//docs/request-matching/">
+
+        Request Matching
+      </a>
+      
+      <li>
+        <a href="http://new.wiremock.org//docs/proxying/">
 
         Proxying
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/record-playback/">
+        <a href="http://new.wiremock.org//docs/record-playback/">
 
         Record and Playback
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/simulating-faults/">
+        <a href="http://new.wiremock.org//docs/simulating-faults/">
 
         Simulating Faults
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/stateful-behaviour/">
+        <a href="http://new.wiremock.org//docs/stateful-behaviour/">
 
         Stateful Behaviour
       </a>
       
       <li>
-        <a href="http://tomakehurst.com/wiremock2/docs/https/">
+        <a href="http://new.wiremock.org//docs/https/">
 
         HTTPS
       </a>
@@ -259,6 +277,12 @@
         Extending WireMock
       </a>
       
+      <li>
+        <a href="http://new.wiremock.org//docs/android/">
+
+        Android
+      </a>
+      
     </ul>
   </nav>
 </div>
@@ -267,7 +291,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Extending WireMock">
     <meta itemprop="description" content="Registering Extensions">
-    <meta itemprop="datePublished" content="June 29, 2016">
+    <meta itemprop="datePublished" content="July 04, 2016">
     
 
     <div class="page__inner-wrap">
@@ -282,11 +306,14 @@
 <p>You can register the extension programmatically via its class name,
 class or an instance:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">().</span><span class="na">extensions</span><span class="o">(</span><span class="s">"com.mycorp.BodyContentTransformer"</span><span class="o">,</span> <span class="s">"com.mycorp.HeaderMangler"</span><span class="o">));</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">()</span>
+  <span class="o">.</span><span class="na">extensions</span><span class="o">(</span><span class="s">"com.mycorp.BodyContentTransformer"</span><span class="o">,</span> <span class="s">"com.mycorp.HeaderMangler"</span><span class="o">));</span>
 
-<span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">().</span><span class="na">extensions</span><span class="o">(</span><span class="n">BodyContentTransformer</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">HeaderMangler</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+<span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">()</span>
+  <span class="o">.</span><span class="na">extensions</span><span class="o">(</span><span class="n">BodyContentTransformer</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">HeaderMangler</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
 
-<span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">().</span><span class="na">extensions</span><span class="o">(</span><span class="k">new</span> <span class="n">BodyContentTransformer</span><span class="o">(),</span> <span class="k">new</span> <span class="n">HeaderMangler</span><span class="o">()));</span>
+<span class="k">new</span> <span class="nf">WireMockServer</span><span class="p">(</span><span class="n">wireMockConfig</span><span class="o">()</span>
+  <span class="o">.</span><span class="na">extensions</span><span class="o">(</span><span class="k">new</span> <span class="n">BodyContentTransformer</span><span class="o">(),</span> <span class="k">new</span> <span class="n">HeaderMangler</span><span class="o">()));</span>
 </code></pre>
 </div>
 
@@ -363,22 +390,22 @@ intend to register them via an instance as described below.</p>
 
 <p>or:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
-    <span class="s2">"request"</span> <span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"url"</span> <span class="err">:</span> <span class="s2">"/transform"</span><span class="p">,</span>
-        <span class="s2">"method"</span> <span class="err">:</span> <span class="s2">"GET"</span>
-    <span class="p">},</span>
-    <span class="s2">"response"</span> <span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"status"</span> <span class="err">:</span> <span class="mi">200</span><span class="p">,</span>
-        <span class="s2">"transformerParameters"</span> <span class="err">:</span> <span class="p">{</span>
-            <span class="s2">"newValue"</span> <span class="err">:</span> <span class="mi">66</span><span class="p">,</span>
-            <span class="s2">"inner"</span> <span class="err">:</span> <span class="p">{</span>
-                <span class="s2">"thing"</span> <span class="err">:</span> <span class="s2">"value"</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"request"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"url"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"/transform"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"method"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"response"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"status"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"transformerParameters"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"newValue"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">66</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"inner"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"thing"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"value"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 </div>
 
 <h3 id="non-global-transformations">Non-global transformations</h3>
@@ -405,18 +432,18 @@ adding this to your transformer class:</p>
 
 <p>or:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
-    <span class="s2">"request"</span><span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"method"</span><span class="err">:</span> <span class="s2">"GET"</span><span class="p">,</span>
-        <span class="s2">"url"</span><span class="err">:</span> <span class="s2">"/local-transform"</span>
-    <span class="p">},</span>
-    <span class="s2">"response"</span><span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"status"</span><span class="err">:</span> <span class="mi">200</span><span class="p">,</span>
-        <span class="s2">"body"</span><span class="err">:</span> <span class="s2">"Original body"</span><span class="p">,</span>
-        <span class="s2">"transformers"</span><span class="err">:</span> <span class="p">[</span><span class="s2">"my-transformer"</span><span class="p">,</span> <span class="s2">"other-transformer"</span><span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/local-transform"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"response"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Original body"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"transformers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"my-transformer"</span><span class="p">,</span><span class="w"> </span><span class="s2">"other-transformer"</span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 </div>
 
 <p>The Java API also has a convenience method for adding transformers and
@@ -454,7 +481,7 @@ parameters in one call:</p>
 </code></pre>
 </div>
 
-<h1 id="custom-request-matchers">Custom Request Matchers</h1>
+<h2 id="custom-request-matchers">Custom Request Matchers</h2>
 
 <p>If WireMock’s standard set of request matching strategies isn’t
 sufficient, you can register one or more request matcher classes
@@ -476,6 +503,14 @@ to matchers.</p>
         <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="na">getBody</span><span class="o">().</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">2048</span><span class="o">;</span>
     <span class="o">}</span>
 <span class="o">}).</span><span class="na">willReturn</span><span class="o">(</span><span class="n">aResponse</span><span class="o">().</span><span class="na">withStatus</span><span class="o">(</span><span class="mi">422</span><span class="o">)));</span>
+</code></pre>
+</div>
+
+<p>In Java 8 and above this can be achieved using a lambda:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">wireMockServer</span><span class="o">.</span><span class="na">stubFor</span><span class="o">(</span><span class="n">requestMatching</span><span class="o">(</span><span class="n">request</span> <span class="o">-&gt;</span>
+    <span class="n">request</span><span class="o">.</span><span class="na">getBody</span><span class="o">().</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">2048</span><span class="o">;</span>
+<span class="o">).</span><span class="na">willReturn</span><span class="o">(</span><span class="n">aResponse</span><span class="o">().</span><span class="na">withStatus</span><span class="o">(</span><span class="mi">422</span><span class="o">)));</span>
 </code></pre>
 </div>
 
@@ -508,19 +543,41 @@ at the top of this page e.g.</p>
 
 <p>or via JSON:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
-    <span class="s2">"request"</span> <span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"customMatcher"</span> <span class="err">:</span> <span class="p">{</span>
-            <span class="s2">"name"</span> <span class="err">:</span> <span class="s2">"body-too-long"</span><span class="p">,</span>
-            <span class="s2">"parameters"</span> <span class="err">:</span> <span class="p">{</span>
-                <span class="s2">"maxLemgth"</span> <span class="err">:</span> <span class="mi">2048</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="s2">"response"</span> <span class="err">:</span> <span class="p">{</span>
-        <span class="s2">"status"</span> <span class="err">:</span> <span class="mi">422</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"request"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"customMatcher"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"body-too-long"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"parameters"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"maxLemgth"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">2048</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"response"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"status"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">422</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h2 id="listening-for-requests">Listening for requests</h2>
+
+<p>If you’re using the JUnit rule or you’ve started <code class="highlighter-rouge">WireMockServer</code>
+programmatically, you can register listeners to be called when a request
+is received.</p>
+
+<p>e.g. with the JUnit rule:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">List</span><span class="o">&lt;</span><span class="n">Request</span><span class="o">&gt;</span> <span class="n">requests</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Request</span><span class="o">&gt;();</span>
+<span class="n">rule</span><span class="o">.</span><span class="na">addMockServiceRequestListener</span><span class="o">(</span><span class="k">new</span> <span class="n">RequestListener</span><span class="o">()</span> <span class="o">{</span>
+     <span class="nd">@Override</span>
+     <span class="kd">public</span> <span class="kt">void</span> <span class="n">requestReceived</span><span class="o">(</span><span class="n">Request</span> <span class="n">request</span><span class="o">,</span> <span class="n">Response</span> <span class="n">response</span><span class="o">)</span> <span class="o">{</span>
+         <span class="n">requests</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">LoggedRequest</span><span class="o">.</span><span class="na">createFrom</span><span class="o">(</span><span class="n">request</span><span class="o">));</span>
+     <span class="o">}</span>
+<span class="o">});</span>
+
+<span class="k">for</span> <span class="o">(</span><span class="n">Request</span> <span class="nl">request:</span> <span class="n">requests</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">assertThat</span><span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="na">getUrl</span><span class="o">(),</span> <span class="n">containsString</span><span class="o">(</span><span class="s">"docId=92837592847"</span><span class="o">));</span>
+<span class="o">}</span>
 </code></pre>
 </div>
 
@@ -563,7 +620,7 @@ at the top of this page e.g.</p>
     
     
     
-    <li><a href="http://tomakehurst.com/wiremock2/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://new.wiremock.org//feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -571,7 +628,7 @@ at the top of this page e.g.</p>
       </footer>
     </div>
 
-    <script src="http://tomakehurst.com/wiremock2/assets/js/main.min.js"></script>
+    <script src="http://new.wiremock.org//assets/js/main.min.js"></script>
 
 
 
