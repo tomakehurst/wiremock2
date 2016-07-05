@@ -54,7 +54,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2016-07-04T22:01:43+01:00">
+  <meta property="article:published_time" content="2016-07-05T13:53:11+01:00">
   
     <link rel="next" href="http://new.wiremock.org/docs/stubbing/" title="Stubbing">
   
@@ -132,14 +132,14 @@
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/docs">Docs</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/docs/">Docs</a></li>
             
 
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/about">About</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/about/">About</a></li>
             
 
           
@@ -160,7 +160,7 @@
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/external-resources">External Resources</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/external-resources/">External Resources</a></li>
             
 
           
@@ -291,7 +291,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Stateful Behaviour">
     <meta itemprop="description" content="Most web services tend to have some state, which changes as you andothers interact with it. So it’s pretty useful to be able to simulatethis when you’ve swapped a real service for a test double.">
-    <meta itemprop="datePublished" content="July 04, 2016">
+    <meta itemprop="datePublished" content="July 05, 2016">
     
 
     <div class="page__inner-wrap">
@@ -320,7 +320,7 @@ showing the updated list.</p>
 
 <p>In Java this could be set up like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nd">@Test</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Test</span>
 <span class="kd">public</span> <span class="kt">void</span> <span class="nf">toDoListScenario</span><span class="p">(</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">stubFor</span><span class="o">(</span><span class="n">get</span><span class="o">(</span><span class="n">urlEqualTo</span><span class="o">(</span><span class="s">"/todo/items"</span><span class="o">)).</span><span class="na">inScenario</span><span class="o">(</span><span class="s">"To do list"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">whenScenarioStateIs</span><span class="o">(</span><span class="n">STARTED</span><span class="o">)</span>
@@ -359,7 +359,7 @@ showing the updated list.</p>
 
 <p>The JSON equivalent for the above three stubs is:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"scenarioName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"To do list"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"requiredScenarioState"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Started"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">

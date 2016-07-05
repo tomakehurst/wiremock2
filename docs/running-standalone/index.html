@@ -54,7 +54,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2016-07-04T22:01:43+01:00">
+  <meta property="article:published_time" content="2016-07-05T13:53:11+01:00">
   
     <link rel="next" href="http://new.wiremock.org/docs/simulating-faults/" title="Simulating Faults">
   
@@ -132,14 +132,14 @@
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/docs">Docs</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/docs/">Docs</a></li>
             
 
           
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/about">About</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/about/">About</a></li>
             
 
           
@@ -160,7 +160,7 @@
             
 
             
-            <li class="masthead__menu-item"><a href="http://new.wiremock.org/external-resources">External Resources</a></li>
+            <li class="masthead__menu-item"><a href="http://new.wiremock.org/external-resources/">External Resources</a></li>
             
 
           
@@ -291,7 +291,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Running as a Standalone Process">
     <meta itemprop="description" content="The WireMock server can be run in its own process, and configured viathe Java API, JSON over HTTP or JSON files.">
-    <meta itemprop="datePublished" content="July 04, 2016">
+    <meta itemprop="datePublished" content="July 05, 2016">
     
 
     <div class="page__inner-wrap">
@@ -304,9 +304,9 @@
         <p>The WireMock server can be run in its own process, and configured via
 the Java API, JSON over HTTP or JSON files.</p>
 
-<p>Once you have <a href="http://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.1.0-beta/wiremock-standalone-2.1.0-beta.jar">downloaded the standalone JAR</a> you can run it simply by doing this:</p>
+<p>Once you have <a href="http://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.1.4-rc3/wiremock-standalone-2.1.4-rc3.jar">downloaded the standalone JAR</a> you can run it simply by doing this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>java -jar wiremock-standalone-2.1.0-beta.jar
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>java -jar wiremock-standalone-2.1.4-rc3.jar
 </code></pre>
 </div>
 
@@ -398,7 +398,7 @@ com.mycorp.HeaderTransformer,com.mycorp.BodyTransformer. See extending-wiremock.
 
 <p>The WireMock Java API can be used against a running server on a different host if required. If you’re only planning to configure a single remote instance from within your program you can configure the static DSL to point to it:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">WireMock</span><span class="o">.</span><span class="na">configureFor</span><span class="o">(</span><span class="s">"my.remote.host"</span><span class="o">,</span> <span class="mi">8000</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="n">WireMock</span><span class="o">.</span><span class="na">configureFor</span><span class="o">(</span><span class="s">"my.remote.host"</span><span class="o">,</span> <span class="mi">8000</span><span class="o">);</span>
 
 <span class="c1">// or for HTTPS</span>
 <span class="n">WireMock</span><span class="o">.</span><span class="na">configureFor</span><span class="o">(</span><span class="s">"https"</span><span class="o">,</span> <span class="s">"my.remote.host"</span><span class="o">,</span> <span class="mi">8443</span><span class="o">);</span>
@@ -415,7 +415,7 @@ WireMock wireMock2 = new WireMock("https", "2nd.remote.host", 8001);
 
 <p>You can create a stub mapping by posting to WireMock’s HTTP API:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl -X POST <span class="se">\</span>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl -X POST <span class="se">\</span>
 --data <span class="s1">'{ "request": { "url": "/get/this", "method": "GET" }, "response": { "status": 200, "body": "Here it is!\n" }}'</span> <span class="se">\</span>
 http://localhost:8080/__admin/mappings/new
 </code></pre>
@@ -423,7 +423,7 @@ http://localhost:8080/__admin/mappings/new
 
 <p>And then fetch it back:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl http://localhost:8080/get/this
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl http://localhost:8080/get/this
 Here it is!
 </code></pre>
 </div>
@@ -439,7 +439,7 @@ it creates two directories under the current one: <code class="highlighter-rouge
 <p>To create a stub like the one above by this method, drop a file with a
 <code class="highlighter-rouge">.json</code> extension under <code class="highlighter-rouge">mappings</code> with the following content:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/api/mytest"</span><span class="w">
@@ -454,7 +454,7 @@ it creates two directories under the current one: <code class="highlighter-rouge
 
 <p>After restarting the server you should be able to do this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl http://localhost:8080/api/mytest
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl http://localhost:8080/api/mytest
 More content
 </code></pre>
 </div>
